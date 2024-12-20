@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="id.png" alt="Id" class="id-image">
+    <div class="BOX-1">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="BOX2">
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+    </div>
+
+    <div class="BOX3">
+        <div class="large-box1">
+            <h2>Borrow a Book</h2>
+            <form action="borrow.php" method="post" class="borrow-form">
+                <label for="fullName">Student Name:</label><br>
+                <input type="text" id="fullName" name="fullName"><br>
+
+                <label for="studentId">Student ID:</label><br>
+                <input type="text" id="studentId" name="studentId"><br>
+
+                <label for="bookTitle">Book Title:</label><br>
+                <select name="bookTitle" id="bookTitle">
+                    <option value="book0">Select a book</option>
+                    <option value="algorithm">Algorithm</option>
+                    <option value="OOP">OOP</option>
+                    <option value="database">Database</option>
+                    <option value="software engineering">Software Engineering</option>
+                    <option value="web technologies">Web Technologies</option>
+                    <option value="advance web technologies">Advance Web Technologies</option>
+                    <option value="machine learning">Machine Learning</option>
+                    <option value="data science">Data Science</option>
+                    <option value="data mining">Data Mining</option>
+                    <option value="data structure">Data Structure</option>
+                </select><br>
+
+                <label for="borrowDate">Borrow Date:</label><br>
+                <input type="date" id="borrowDate" name="borrowDate"><br>
+
+                <label for="token">Token:</label><br>
+                <input type="text" id="token" name="token"><br>
+
+                <label for="returnDate">Return Date:</label><br>
+                <input type="date" id="returnDate" name="returnDate"><br>
+
+                <label for="fees">Fees:</label><br>
+                <input type="text" id="fees" name="fees"><br>
+
+                <label for="paid">Paid:</label><br>
+                <select id="paid" name="paid"><br>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+        <div class="large-box2">
+            <h2>Book Details</h2>
+            <form action="book.php" method="post" class="book-details">
+                <label for="bookTitle">Book Title:</label><br>
+                <input type="text" id="bookTitle" name="bookTitle"><br>
+
+                <label for="authorName">Author Name:</label><br>
+                <input type="text" id="authorName" name="authorName"><br>
+
+                <label for="noBook">Number of Book:</label><br>
+                <input type="text" id="noBook" name="noBook"><br>
+
+                <label for="isbn">ISBN:</label><br>
+                <input type="text" id="isbn" name="isbn"><br>
+
+                <label for="bcoun">Number of Count Book:</label><br>
+                <input type="text" id="coun" name="count"><br>
+
+                <label for="category">Category:</label><br>
+                <input type="text" id="category" name="category"><br>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
