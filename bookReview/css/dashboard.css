@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.dashboard-header {
+    background-color: #c2bdbd; 
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content .username {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; 
+}
+
+.header-content .logout-btn {
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header-content .logout-btn:hover {
+    background-color: #0056b3; 
+}
+
+.banner-content img{
+    width: 100%;
+    height: 400px;
+}
+
+/* Dashboard Content Styles */
+.dashboard-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.author-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author-card{
+    margin-top: 30px;
+    width: 300px;
+    background-color: #dddada;
+    border-radius: 20px;
+    padding: 9px;
+    margin-left: 16px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.author-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #7c7979;
+}
+
+.author-list {
+    list-style: none;
+    padding: 0;
+}
+
+.author-list img{
+    width: 100px;
+}
+
+.author-list li {
+    margin: 10px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.author-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.author-list a:hover {
+    text-decoration: underline;
+}
+
+.author-card button{
+    width: 70px;
+    height: 30px;
+}
+
+.author-card button a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #7c7979;
+}
+
+.footer {
+    background-color: #c2bdbd;
+    color: #333;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
